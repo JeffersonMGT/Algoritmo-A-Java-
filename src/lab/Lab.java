@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package lab;
 
 import java.util.ArrayList;
@@ -14,6 +8,7 @@ public class Lab {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         casilla [][]Lab = {{new casilla(0, 0), new casilla(0, 1), new casilla(0, 2), new casilla(0, 3), new casilla(0, 4)}, 
                            {new casilla(1, 0), new casilla(1, 1), new casilla(1, 2), new casilla(1, 3), new casilla(1, 4)}, 
@@ -21,6 +16,7 @@ public class Lab {
                            {new casilla(3, 0), new casilla(3, 1), new casilla(3, 2), new casilla(3, 3), new casilla(3, 4)},
                            {new casilla(4, 0), new casilla(4, 1), new casilla(4, 2), new casilla(4, 3), new casilla(4, 4)},
                            {new casilla(5, 0), new casilla(5, 1), new casilla(5, 2), new casilla(5, 3), new casilla(5, 4)}};
+        //Lista de muros
         Lab[0][0].muro = 1;
         Lab[2][1].muro = 1;
         Lab[2][2].muro = 1;
@@ -29,8 +25,11 @@ public class Lab {
         Lab[1][1].muro = 1;
         Lab[0][1].muro = 1;
         
+        //Establece el punto de inicio y fin
         casilla inicio = new casilla(3, 1);
         casilla fin = new casilla(1, 2);
+        
+        
         ArrayList<casilla> Tabla_casillas = new ArrayList<>();
         Tabla_casillas.add(inicio);
         
